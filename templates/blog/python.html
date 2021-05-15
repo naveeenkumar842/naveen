@@ -1,0 +1,69 @@
+
+<html>
+  <head>
+      <style>
+          h1{
+              text-align: center;
+              font-family: cursive;
+              font-size: 40px;
+          }
+          .myh2{
+              color: white;
+              text-align: center;
+              font-family: Arial;
+          }
+          .myclass{
+              background-color: coral;
+              color: white;
+              padding: 10px 0px 10px 30px;
+              margin-bottom: 30px;
+          }
+      </style>
+  </head>
+
+
+  <body style="background-color: greenyellow">
+
+  {% extends 'blog/base.html' %}
+    {% block content %}
+         <h1>Welcome to Python Family</h1>
+
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6">
+                     <h2 class="myh2">About Python</h2>
+                     <div class="myclass">
+                         <p>1.Python is simple language</p>
+                         <p>2.Python is powerfull language</p>
+                         <p>3.Python is high level language</p>
+                     </div>
+                 </div> <!-- first col-md-6 -->
+
+                 <div class="col-md-6">
+                     <h2 class="myh2">About Django</h2>
+                     <div class="myclass">
+                         <p>1.Django is python web framework</p>
+                         <p>2.Django is scalable</p>
+                         <p>3.Django is Versatile</p>
+                     </div>
+                 </div> <!-- second col-md-6 -->
+             </div><!-- row 1 -->
+
+
+
+             <div class="row">
+                 <div class="col-md-10">
+                     <h2 class="myh2">About REST-API</h2>
+                     <div class="myclass">
+                         <p>1.REST-API is advance concept to Django.</p>
+                         <p>2.REST-API has more demand now a days.</p>
+                         <p>3.With out REST-API , Django application is like Handicupled.</p>
+                     </div>
+                 </div>
+             </div> <!-- row 2 -->
+         </div>
+
+
+    {% endblock %}
+  </body>
+</html>
